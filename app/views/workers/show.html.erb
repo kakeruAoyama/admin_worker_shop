@@ -1,0 +1,7 @@
+<h1>Workers#Show</h1>
+<%= @worker.name %>
+<%= @worker.shop %>
+
+<% if current_admin %>
+  <%= link_to "職員一覧", wokers_path %>
+<% end %>

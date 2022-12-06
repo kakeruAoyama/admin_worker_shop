@@ -5,5 +5,10 @@
   <%= @shop.name %>
 </p>
 
+<h4>Worker一覧</h4>
+<% @shop.workers.each do |worker| %>
+  <%= worker.name %><br>
+<% end %>
+
 <%= link_to 'Edit', edit_shop_path(@shop) %> |
 <%= link_to 'Back', shops_path %>
