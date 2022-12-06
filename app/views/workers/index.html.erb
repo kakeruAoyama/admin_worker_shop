@@ -1,0 +1,7 @@
+<h1>Workers#index</h1>
+<% @workers.each do |worker| %>
+  <div>
+    名前：<%= worker.name %>
+    所属：<%= worker.shop.name %>
+  </div>
+<% end %>
